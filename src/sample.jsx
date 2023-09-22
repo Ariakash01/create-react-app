@@ -2,7 +2,7 @@ import React from 'react'
 
 const sample = () => {
   return (
-    <div>sample</div>
+    <div> yutruhjy4r3eh</div>
   )
 }
 
