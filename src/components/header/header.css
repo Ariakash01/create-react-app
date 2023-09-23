@@ -73,6 +73,10 @@ header{
     }
     
     .me{
-        left: 15%;
+        left: 10%;
+        width: 80%;
+    }
+    .dp{
+        border-radius:8rem 3rem 0 0
     }
 }

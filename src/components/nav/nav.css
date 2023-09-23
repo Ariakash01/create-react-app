@@ -9,7 +9,7 @@ nav{
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 0.8rem;
+    gap: 0.1rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
 }
@@ -27,4 +27,10 @@ nav a:hover{
 nav a.active{
     background: var(--color-primary);
     color: var(--color-bg);
+}
+@media screen and (max-width:301px){
+       nav{
+        padding: 0.2rem 0.5rem;
+        left: 44%;
+       }
 }

@@ -46,6 +46,7 @@ footer a{
 }
 
 @media screen and (max-width:600px){
+    
     .perLinks{
         flex-direction: column;
         gap: 2.6rem;

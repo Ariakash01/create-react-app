@@ -1,15 +1,13 @@
-.conContainer{
- 
-    width: var(--container-width-lg);
+.container.conContainer{  
+    width: 58%;
     display: grid;
     grid-template-columns: 38% 50%;
     gap: 12%;
 }
 .conOptions{
-   
-   display: flex;
-   flex-direction: column;
-   gap: 1.2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 .conOption{
     background:var(--color-bg-variant);
@@ -23,64 +21,47 @@
     background: transparent;
     border-color:var(--color-bg-variant);
 }
-.conIcon{
-    font-size: 1.5rem;
-    margin-bottom: 1.2rem;
-}
 .conContainer a{
-    margin-top: 1.5rem;
-    
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem
 }
-.conContainer h5{
-    font-weight: 400;
-    color: var(--color-light);
+form{
+    display: flex;
+    flex-direction:column;
+    gap: 1.2rem;
+
 }
-.conContainer form{
-    display: grid;
-    grid-template-rows: 10% 10% 30% 10%;
-    padding: 8%;
-    gap: 2%; 
-}
-.submit{
-    height: 3rem;
-}
-.conContainer form input,textarea{
-   border-radius: 0.7rem;
-   padding: 1rem;
+input ,textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
 }
 @media screen and (max-width:1024px){
-    .container{
-        width: var(-- --container-width-md);
-    }
-    .conContainer form input{
-        height: 3rem;
-    }
-    textarea{
-        height: 8rem;
-    }
-    .conContainer{
-        width: 80%;
+    .container.conContainer{
+        display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     .conOptions{
         display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        gap: 0.8rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
-    .conContainer form{
-        grid-template-rows: 10% 10% 30% 10%;
-        gap: 2rem;
-     }
-
+    
+    
 }
 @media screen and (max-width:600px){
-    .conContainer{
-        width: var(-- --container-width-sm);
-        gap: 0.1rem;
+    .container.conContainer{
+        width: var(--container-width-sm);
     }
     .conOptions{
-        grid-template-columns: 1fr 1fr ;
-        gap: 0.8rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
